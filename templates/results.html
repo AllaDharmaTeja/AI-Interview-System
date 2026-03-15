@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Interview Results</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Interview Results</h1>
+
+<h2>Your Final Score</h2>
+
+<h3>{{ score }} %</h3>
+
+{% if score >= 80 %}
+
+<p>Excellent performance! You are interview ready.</p>
+
+{% elif score >= 50 %}
+
+<p>Good attempt. You can improve with more practice.</p>
+
+{% else %}
+
+<p>You need more preparation. Keep practicing.</p>
+
+{% endif %}
+
+<br>
+
+<a href="/">
+
+<button>Start New Interview</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>
