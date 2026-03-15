@@ -1,2 +1,13 @@
-# AI-Interview-System
-AI-based Interview Preparation System built with Python, Flask, and Machine Learning to simulate interview questions and evaluate candidate performance.
+AI Interview Platform
+
+Features
+- AI semantic answer evaluation
+- Speech interview support
+- Admin question management
+- SQLite results storage
+
+Tech Stack
+Python
+Flask
+Sentence Transformers
+SpeechRecognition
