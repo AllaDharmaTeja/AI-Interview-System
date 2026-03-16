@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request
 from interview_engine import get_question
 from scoring_engine import evaluate_answer
@@ -16,7 +17,6 @@ def interview():
     score = None
 
     if request.method == "GET":
-
         current_question, correct_answer = get_question()
 
     if request.method == "POST":
@@ -60,4 +60,3 @@ def admin():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
-    
